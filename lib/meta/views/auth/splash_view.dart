@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:clouduka/meta/nav_screen.dart';
-import 'package:clouduka/meta/views/tabs/home_page_view.dart';
 import 'package:clouduka/shared/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -58,10 +57,8 @@ class _SplashViewState extends State<SplashView> {
           Center(
             child: Stack(
               children: [
-                Center(child: Text("ClouDuka", style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w900, color: mainThemeColor ),)),
-                Center(child: CircularProgressIndicator(
-                  color: mainThemeColor,
-                ))
+                Center(child: Image.asset("assets/images/logo.png", height: 68.0,)),
+                
               ],
             ),
           )
