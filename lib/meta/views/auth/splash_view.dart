@@ -1,6 +1,5 @@
 import 'dart:async';
-
-import 'package:clouduka/meta/nav_screen.dart';
+import 'package:clouduka/meta/views/tabs/WebViewContainer.dart';
 import 'package:clouduka/shared/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -21,7 +20,7 @@ class _SplashViewState extends State<SplashView> {
             () => Navigator.pushReplacement(
             context,
             PageTransition(
-                child: NavScreen(),
+                child: WebViewContainer(),
                 type: PageTransitionType.fade)));
     return Scaffold(
       body: SafeArea(
