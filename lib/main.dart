@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
         statusBarColor: mainThemeColor
     ));
     return MaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,

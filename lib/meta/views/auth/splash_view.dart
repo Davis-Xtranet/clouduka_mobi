@@ -6,7 +6,7 @@ import 'package:page_transition/page_transition.dart';
 
 
 class SplashView extends StatefulWidget {
-  const SplashView({Key? key}) : super(key: key);
+  const SplashView({Key key}) : super(key: key);
 
   @override
   _SplashViewState createState() => _SplashViewState();
@@ -17,7 +17,8 @@ class _SplashViewState extends State<SplashView> {
   Widget build(BuildContext context) {
     Timer(
         Duration(seconds: 2),
-            () => Navigator.pushReplacement(
+            () =>
+                Navigator.pushReplacement(
             context,
             PageTransition(
                 child: WebViewContainer(),
